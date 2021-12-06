@@ -1,0 +1,568 @@
+<!DOCTYPE html> 
+<html lang="en" class="no-js"> 
+	<head> 
+		<meta charset="UTF-8"/> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Risha's Food Blog</title> 
+		<meta name="author" content="Team Risha"/> 
+		<link rel="shortcut icon" href="img/favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/> 
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css"/> 
+		<link rel="stylesheet" type="text/css" href="modern-blog.css"/> <!--[if IE]> <script type="text/javascript" src="js/vendors/html5.min.js"></script> <![endif]--> 
+		<script> 
+			if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) { var root = document.getElementsByTagName('html')[0]; root.setAttribute('class', 'ff'); } 
+		</script> 
+
+		<script type="text/javascript">
+			funtion hideslider()
+			{
+				document.getElementsByClassName('slideshow-container').style.display = "none"
+			}
+		</script>
+
+		<style>
+			* {box-sizing: border-box;}
+			body {font-family: Verdana, sans-serif;}
+			.mySlides {display: none;}
+			img {vertical-align: middle;}
+
+			/* Slideshow container */
+			.slideshow-container {
+			width:65%;
+  			position: relative;
+  			margin: auto;
+			  margin-top: 50px;
+			}
+
+			html {
+  			scroll-behavior: smooth;
+			}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+ /*Fading animation*/ 
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+			  .text {font-size: 11px}
+			}
+			.navi ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  overflow: hidden;
+			  /*background-color: #333;*/
+			}
+
+			.navi
+			{
+				background-color: rgba(0,0,0,0);
+			}
+
+			.navi  li {
+			  float: right;
+			  font-size: 24px;
+			}
+
+			.navi li a {
+			  display: block;
+			  color: rgba(0,0,0,0.65);
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			}
+
+			.navi li a:hover {
+			 color: rgba(255,255,255,0.7);
+			}
+
+			.main_head:hover{
+				color:rgba(0,0,0,0.7);
+			}
+			</style>
+
+
+		
+	</head> 
+	<body class="body">
+		<div class="navi">
+			<ul>
+				<li><a href="articles.php" style="font-size: 18px;">Articles</a></li>
+				<li><a href="#gallery" style="font-size: 18px;">Gallery</a></li>
+				<li><a href="#about" style="font-size: 18px;">About Us</a></li>
+			    <li><a href="index.html" style="font-size: 18px;">Home</a></li>
+			</ul>
+		</div> 
+		
+		<div class="container"> 
+			<header class="header"> 
+				<h1 style="text-align: center;font-size: 45px;" onclick=location.reload() class="main_head">Risha's Food Blog<span>Fresh Perspectives on Food Worldwide.</span></h1> 
+				<nav class="links"> 
+					<a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square fa-3x"></i></a> 
+					<a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram fa-3x"></i></a> 
+					<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square fa-3x"></i></a> 
+					<a href="https://www.tumblr.com/" target="_blank" rel="noopener noreferrer"><i class="fa fa-tumblr-square fa-3x"></i></a> 
+				</nav> 
+			</header> 
+			<div class="content"> 
+				<!-- trianglify pattern container --> 
+				<div class="pattern pattern--hidden"></div>
+				 <!-- cards --> 
+				 	<div class="wrapper"> 
+				 		<div class="card" data-id="/2015/04/25/workshop"> 
+					 		<div class="card__container card__container--closed"> 
+					 			<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice" style="border-radius:8%"> 
+					 				<defs> 
+					 					<clipPath id="/2015/04/25/workshop-clip-path"> 
+					 						<polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon> 
+					 					</clipPath> 
+					 				</defs> 
+					 				<image clip-path="url(#/2015/04/25/workshop-clip-path)" width="1920" height="1200" xlink:href="img/f.jpg" onclick=hideslider()></image> 
+					 			</svg> 
+					 			<div class="card__content"> 
+					 				<i class="card__btn-close fa fa-times"></i> 
+					 				<div class="card__caption"> 
+					 					<h2 class="card__title" style="font-size: 20px;">Vegan Lentil Bolognese</h2> 
+					 					<p class="card__subtitle">Rich in flavour with few ingredients</p> 
+					 				</div> 
+					 				<div class="card__copy"> 
+					 					<div class="meta"> 
+					 						<img class="meta__avatar" src="img/authors/wferr.png"/> 
+					 						<span class="meta__author">Ananya</span> 
+					 						<span class="meta__date">2017-11-10</span> 
+					 					</div> 
+					 					<h3 id="dolor-sit-amet">Ingredients</h3>
+					 					<ul>
+					 						<li>2 carrots (grated)</li>
+											<li>1 large onion (finely chopped)</li>
+											<li>3 cloves of garlic (finely chopped)</li>
+											<li>1 tablespoon fresh thyme (finely chopped)</li>
+											<li>2 tomatoes (diced)</li>
+											<li>1 teaspoon paprika</li>
+											<li>1/2 can tomato paste</li>
+											<li>2 vegetable stock cubes</li>
+											<li>1 cup red split lentils</li>
+											<li>1/2 cup red wine</li>
+											<li>Spaghetti noodles</li>
+										</ul> 
+	    								<h2>Method</h2>
+	    								<ol>
+	    									<li>Add your onion and garlic to a pan and fry in some olive oil on medium heat.</li>
+	    									<li>Once the onions start to brown, add your thyme and carrots.</li>
+	    									<li>After about 5 minutes of stirring, add your chopped tomatoes, and paprika, salt & pepper for seasoning.</li>
+	    									<li>Once the veggies are cooked and browned, add your remaining ingredients (tomato paste, veggie stock cubes, lentils & red wine) along with 2 cups of water.</li>
+	    									<li> Bring to a boil and then allow to simmer for approximately 20-25 minutes until the mixture thickens, and the lentils are cooked. You may need to add a little more water throughout this process. The lentils are meant to be soft and not crunchy.</li>
+	    									<li>Once step 5 is complete, serve with spaghetti noodles and viola!.</li>
+	    								</ol>
+	        						</div> 
+   	 							</div> 
+   	 						</div> 
+   	 					</div> 
+	   	 				<div class="card" data-id="/2015/04/24/i-scream"> 
+	   	 					<div class="card__container card__container--closed"> 
+	   	 						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice" style="border-radius:8%"> 
+	   	 							<defs> 
+	   	 								<clipPath id="/2015/04/24/i-scream-clip-path"> 
+	   	 									<polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon> 
+	   	 								</clipPath> 
+	   	 							</defs> 
+	   	 							<image clip-path="url(#/2015/04/24/i-scream-clip-path)" width="1920" height="1200" xlink:href="img/e.jpg" onclick=hideslider()></image> 
+	   	 						</svg> 
+	   	 						<div class="card__content"> 
+	   	 							<i class="card__btn-close fa fa-times"></i> 
+	   	 							<div class="card__caption"> 
+	   	 								<h2 class="card__title" style="font-size: 20px;">Leek & Potato Soup</h2> 
+	   	 								<p class="card__subtitle">Creamy heart-warming soup!</p> 
+	   	 							</div> 
+	   	 							<div class="card__copy"> 
+	   	 								<div class="meta"> 
+	   	 									<img class="meta__avatar" src="img/authors/wferr.png"/> 
+	   	 									<span class="meta__author">Ritu</span> 
+	   	 									<span class="meta__date">2015-04-24</span> 
+	   	 								</div> 
+	   	 								<h3 id="dolor-sit-amet">Ingredients</h3> 
+	   	 								<ul>
+	   	 									<li>3 large leeks (thinly sliced)</li>
+								            <li>3 small potatoes (cut into chunks)</li>
+								            <li>1 tablespoon butter</li>
+								            <li>1 tablespoon garlic</li>
+								            <li>1 cup veggie stock</li>
+								            <li>juice of half a lemon</li>
+								            <li>1 teaspoon paprika</li>
+								            <li>1 teaspoon mixed herbs</li>
+								            <li>5 rashes streaky bacon (optional)</li>   
+	     								</ul> 
+	     								<h2>Method</h2>
+	     								<ol>
+	     									<li>Melt butter in a pot and once melted add leeks and cook for approximately 5 minutes.</li>
+	     									<li>Add garlic, paprika, mixed herbs, lemon juice, salt to taste and mix thoroughly.</li>
+	     									<li>Add vegetable stock and potatoes.</li>
+	     									<li>Cook until potatoes are soft.</li>
+	     									<li>Once cooked, remove from heat and leave the leeks & potatoes mixture to cool.</li>
+	     									<li>Finely chop bacon and fry until your preferred level of crisp.</li>
+	     									<li>Once potatoes & leek mixture has cooled, blend using either a hand-blender/blender/food processor.</li>
+	     									<li>Once blended, pour the mixture back into the pot and reheat.</li>
+	     									<li>Once warm, add bacon and viola!.</li>
+	     								</ol>
+	            				    </div>
+            					</div> 
+            				</div> 
+            			</div> 
+	            		<div class="card" data-id="/2015/04/23/night-sky"> 
+	            			<div class="card__container card__container--closed"> 
+	            				<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice" style="border-radius:8%"> 
+	            					<defs> 
+	            						<clipPath id="/2015/04/23/night-sky-clip-path"> 
+	            							<polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon> 
+	            						</clipPath> 
+	            					</defs> 
+	            					<image clip-path="url(#/2015/04/23/night-sky-clip-path)" width="1920" height="1200" xlink:href="img/d.jpg" onclick=hideslider()></image> 
+	            				</svg> 
+	            				<div class="card__content"> 
+	            					<i class="card__btn-close fa fa-times"></i> 
+	            					<div class="card__caption"> 
+	            						<h2 class="card__title" style="font-size: 20px;">Crispy Tuna Fish Cakes</h2> 
+	            						<p class="card__subtitle">Tasty fish cakes</p> 
+	            					</div> 
+	            					<div class="card__copy"> 
+	            						<div class="meta"> 
+	            							<img class="meta__avatar" src="img/authors/wferr.png"/> 
+	            							<span class="meta__author">Sara</span> 
+	            							<span class="meta__date">2015-04-23</span> 
+	            						</div> 
+	            						<h3 id="dolor-sit-amet">Ingredients</h3> 
+	            						<ul>
+	            							<li>2 cans of tuna (drained)</li>
+	            							<li>2 eggs</li>
+	            							<li>3/4 cup polenta</li>
+	            							<li>1 small red onion (VERY finely chopped)</li>
+	            							<li>1 tomato (VERY finely chopped)</li>
+	            							<li>1 teaspoon onion powder</li>
+	            							<li>1 teaspoon crushed garlic</li>
+	            							<li>1 teaspoon paprika</li>
+	            							<li>1 tablespoon mayo.</li>
+	            						</ul>
+	                 					<h3>Method</h3>
+	                 					<ol>
+	                 						<li>In a mixing bowl combine your tuna, tomato, red onion, one egg, one tablespoon of your polenta, garlic, mayo, onion powder, paprika salt & pepper and mix thoroughly</li>
+	                 						<li>Put your remaining egg in a separate bowl and beat thoroughly.</li>
+	                 						<li>Put your remaining polenta in a separate bowl</li>
+	                 						<li>Using your hands, take small chunks of your tuna mixture and combine into a small ball. Dip each ball first into the beaten egg and then the polenta, making sure to cover thoroughly. Set the tuna balls aside and repeat until your tuna mixture is finished. The mixture should make about 8 tuna balls.</li>
+	                 						<li>Heat a saucepan to medium heat with your oil of choice. Once the oil is hot - cook your fish cakes. Cook each fish cake for approximately 5 minutes each side or until the polenta starts to turn a golden brown.</li>
+	                 						<li>Once complete, serve with a wedge of fresh lemon!.</li>	
+	                 					</ol> 
+	                 				</div> 
+	                 			</div> 
+	                 		</div> 
+	                 	</div> 
+	                 	<div class="card" data-id="/2015/04/22/what-time"> 
+	                 		<div class="card__container card__container--closed"> 
+	                 			<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice" style="border-radius:8%"> 
+	                 				<defs> 
+	                 					<clipPath id="/2015/04/22/what-time-clip-path"> 
+	                 						<polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon> 
+	                 					</clipPath> 
+	                 				</defs> 
+	                 				<image clip-path="url(#/2015/04/22/what-time-clip-path)" width="1920" height="1200" xlink:href="img/c.jpg" onclick=hideslider()></image> 
+	                 			</svg> 
+	                 			<div class="card__content"> 
+	                 				<i class="card__btn-close fa fa-times"></i> 
+	                 				<div class="card__caption"> 
+	                 					<h2 class="card__title" style="font-size: 20px;">Thai Green Chicken Curry</h2> 
+	                 					<p class="card__subtitle">Spicy and super tasty!</p>
+	                 				</div> 
+	                 				<div class="card__copy"> 
+	                 					<div class="meta"> 
+	                 						<img class="meta__avatar" src="img/authors/wferr.png"/> 
+	                 						<span class="meta__author">Harsha</span> 
+	                 						<span class="meta__date">2018-03-22</span> 
+	                 					</div> 
+	                 					<h3 id="dolor-sit-amet">Ingredients</h3> 
+	                 					<ul>
+	                 						<li>4 cloves of garlic</li>
+	                 						<li>1 tablespoon of fresh ginger</li>
+	                 						<li>1 white onion</li>
+	                 						<li>1 red pepper</li>
+	                 						<li>1 yellow pepper</li>
+	                 						<li> 1 orange/green pepper</li>
+	                 						<li>4 chicken breasts</li>
+	                 						<li>Thai green curry paste</li>
+                 							<li>1 can of coconut milk</li>
+                 							<li>2 cups of frozen peas</li>
+                 							<li>3 cups of basmati rice.</li> 
+                        				</ul>
+                        				<h2>Method</h2>
+                        				<ol>
+                        					<li>Slice up your onion and start to fry in your pot. [Side note, from beginning to start you should keep your pot on low heat].</li>
+                        					<li>Finely chop your garlic and ginger and add to your onions.</li>
+                        					<li>Cook for about 5-10 minutes until the onions are slightly browning.</li>
+                        					<li>Julienne your peppers (the thinner the slices the better as then they will ‘cook away’ and add a lot of sweetness and flavour to your dish).</li>
+                        					<li>Add to your onions and stir thoroughly.</li>
+                        					<li>Cut your chicken into small slices/chunks and season with salt & pepper.</li>
+                        					<li>Add to your onions & peppers and stir thoroughly.</li>
+                        					<li>Cook until your chicken pieces are white (no red in sight) but not until brown.</li>
+                        					<li>Add your Thai green curry paste and stir through thoroughly.</li>
+                        					<li>Add your coconut milk and frozen peas, stir thoroughly and allow to simmer for app 20 minutes.</li>
+                        					<li>Cook your rice while your curry is simmering.</li>
+                        					<li>In a bowl, serve rice, curry and your sambals - viola!</li>
+                        				</ol>
+                        			</div> 
+                        		</div> 
+                        	</div> 
+                        </div> 
+                        <div class="card" data-id="/2015/04/21/city-nights"> 
+                        	<div class="card__container card__container--closed"> 
+                        		<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice" style="border-radius:8%" > 
+                        			<defs> 
+                        				<clipPath id="/2015/04/21/city-nights-clip-path"> 
+                        					<polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon> 
+                        				</clipPath> 
+                        			</defs> 
+                        			<image clip-path="url(#/2015/04/21/city-nights-clip-path)" width="1920" height="1200" xlink:href="img/b.jpg" onclick=hideslider()></image> 
+                        		</svg> 
+                        		<div class="card__content"> 
+                        			<i class="card__btn-close fa fa-times"></i> 
+                        			<div class="card__caption"> 
+                        				<h2 class="card__title" style="font-size: 20px;">Banana & Chia Pancakes</h2> 
+                        				<p class="card__subtitle">Healthy,delicious and sweet pancakes! </p> 
+                        			</div> 
+                        			<div class="card__copy"> 
+                        				<div class="meta"> 
+                        					<img class="meta__avatar" src="img/authors/wferr.png"/> 
+                        					<span class="meta__author">Ranhi</span> 
+                        					<span class="meta__date">2015-04-21</span> 
+                        				</div> 
+                        				<h3 id="dolor-sit-amet">Ingredients</h3>
+                        				<ul>
+                        					<li>Pancake batter</li>
+                        					<li>1 banana</li>
+                        					<li>2 large eggs</li>
+                        					<li>1 cup oats</li>
+                        					<li>1 cup milk (I used almond milk)</li>
+                        					<li>2 tablespoons chia seeds</li>
+                        				</ul>
+                        				<h3 id="dolor-sit-amet">Toppings</h3>
+                        				<ul>
+                        					<li>Greek yoghurt</li>
+                        					<li>Peanut butter</li>
+                        					<li>Banana</li>
+                        					<li>Honey</li>
+                        					<li>Cinnamon</li>
+										</ul>
+									 	<h2>Method</h2>
+									 	<ol>
+									 		<li>Combine all ingredients listed under pancake batter in a blender and blend thoroughly</li>
+									 		<li>Heat a non-stick pan with a little bit of oil on medium heat</li>
+									 		<li>Using a tablespoon gently put your batter onto the pan. I used about two heaped tablespoons per pancake</li>
+									 		<li>Allow to cook on each side for about 3-4 minutes or until golden brown</li>
+									 		<li>To serve, create almost a kind of layered cake of pancakes: Place one pancake on the plate, smear with peanut butter and yoghurt, drizzle with honey and sprinkle with cinnamons.</li>
+									 		<li>Then add another pancake on top and repeat for two more pancakes.</li>
+									 		<li>Finish off by topping with chopped bananas.</li>
+									 	</ol> 
+									</div> 
+								</div> 
+							</div> 
+						</div> 
+						<div class="card" data-id="/2015/04/20/planes"> 
+							<div class="card__container card__container--closed"> 
+								<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice" style="border-radius:8%"> 
+									<defs> 
+										<clipPath id="/2015/04/20/planes-clip-path"> 
+											<polygon class="clip" points="0,1200 0,0 1920,0 1920,1200"></polygon>
+										</clipPath> 
+									</defs> 
+									<image clip-path="url(#/2015/04/20/planes-clip-path)" width="1920" height="1200" xlink:href="img/a.jpg" onclick=hideslider()></image> 
+								</svg> 
+								<div class="card__content"> 
+									<i class="card__btn-close fa fa-times"></i> 
+									<div class="card__caption"> 
+										<h2 class="card__title" style="font-size: 20px;">Curried Mince Pasta Bake</h2> 
+										<p class="card__subtitle">Warm and substantial bowl of goodness.</p> 
+									</div> 
+									<div class="card__copy"> 
+										<div class="meta"> 
+											<img class="meta__avatar" src="img/authors/wferr.png"/> 
+											<span class="meta__author">Honey</span> 
+											<span class="meta__date">2019-01-10</span> 
+										</div> 
+										<h3 id="dolor-sit-amet">Ingredients</h3> 
+										<ul>
+											<li>1 large white onion</li>
+											<li>3 tablespoons of curry powder</li>
+											<li>2 tablespoons of chopped garlic</li>
+											<li>A handful of fresh herbs (I used a mix of sage, basil, and oregano)</li>
+											<li>3 large carrots</li>
+											<li>500g lean beef mince</li>
+											<li>1 cup macaroni pasta</li>
+											<li>1 tub vegetable stock</li>
+											<li>1 tin diced tomatoes</li>
+											<li>100g tomato paste</li>
+                                       		<li>1/2 cup of cheese of choice</li>
+                                    	</ul>
+                                   		<h2>Method</h2>
+                               			<ol>
+                                    		<li>Finely chop your onion and add to a large frying pan/pot (non-stick) with some oil, start to fry until onions become soft and translucent</li>
+                                    		<li>Add your curry powder and garlic to your onions and continue frying</li>
+                                   			<li>Finely chop your herbs. Add about two thirds of your herbs to the onion mixture, and leave the rest aside</li>
+                               				<li>Grate 2 of your carrots and add to your onion mixture. Continue frying</li>
+                                    		<li>Chop your remaining carrot finely and add to your onion mixture. Continue frying</li>
+                                    		<li>Add your beef mince and add enough salt to taste. Fry until all the mince is browned</li>
+                                    		<li>Add your vegetable stock, 1/2 cup of water, diced tomatoes and tomatoe paste and stir thoroughly. Taste your mixture and add more salt if needed.</li>
+                                    		<li>Leave your beef mixture to simmer on a low heat while you cook your macaroni pasta. I always add a teaspoon of butter to the pot when cooking pasta to help prevent the water from boiling over.</li>
+                                    		<li>Once your pasta is cooked, drain and add to beef mixture.</li>
+                                    		<li>Stir thoroughly and transfer to baking dish and straight into the oven at 180 degrees.</li>
+                                    		<li>While your curried beef pasta is baking, grate your cheese.</li>
+                                    		<li>After ten minutes of baking, remove the mixture from the oven and top with your grated cheese and remaining fresh herbs.</li>
+                                    		<li>Continue baking for another 15 minutes.</li>
+                                    		<li>Serve and enjoy!</li>
+                                    	</ol>
+                                   	</div> 
+                                </div> 
+                            </div> 
+                        </div> 
+
+                   	    <!-- /cards --> 
+                    </div> 
+                    <div id="gallery">
+                    	<h1 style="padding-top: 10px;text-align: center;"></h1>
+                    	<div class="slideshow-container">
+
+							  <!-- Full-width images with number and caption text -->
+							  <div class="mySlides fade">
+							    <div class="numbertext">1 / 4</div>
+							    <img src="img/ind.jpg" style="width:100%;height: 540px;border-radius: 5%;">
+							    <div class="text">Indian</div>
+							  </div>
+							  <div class="mySlides fade">
+							    <div class="numbertext">2 / 4</div>
+							    <img src="img/burgers.jpg" style="width:100%;height: 540px;border-radius: 5%;">
+							    <div class="text">American</div>
+							  </div>
+
+							  <div class="mySlides fade">
+							    <div class="numbertext">3 / 4</div>
+							    <img src="img/pasta.jpg" style="width:100%;height: 540px;border-radius: 5%;">
+							    <div class="text">Italian</div>
+							  </div>
+
+							  <div class="mySlides fade">
+							    <div class="numbertext">4 / 4</div>
+							    <img src="img/tacos.jpg" style="width:100%;height: 540px;border-radius: 5%;">
+							    <div class="text">Mexican</div>
+							  </div>
+							</div>
+							<br>
+
+							<!-- The dots/circles -->
+							<div style="text-align:center">
+							  <span class="dot" onclick="currentSlide(1)"></span>
+							  <span class="dot" onclick="currentSlide(2)"></span>
+							  <span class="dot" onclick="currentSlide(3)"></span>
+							  <span class="dot" onclick="currentSlide(4)"></span>
+							</div>
+
+						</div>
+                    </div>                    
+					<br>
+			<script>
+				var slideIndex = 0;
+					showSlides();
+
+					function showSlides() {
+					  var i;
+					  var slides = document.getElementsByClassName("mySlides");
+					  for (i = 0; i < slides.length; i++) {
+					    slides[i].style.display = "none";
+					  }
+					  slideIndex++;
+					  if (slideIndex > slides.length) {slideIndex = 1}
+					  slides[slideIndex-1].style.display = "block";
+					  setTimeout(showSlides, 2500); // Change image every 2 seconds
+					}
+			</script>
+              </div> 
+            <footer>
+            	<div class="footer-content" id="about">
+            		<h1 style="padding-top: 10px;text-align: center;">About Us</h1>
+            		<pre>
+            		<p style="font-size:20px;text-align: center;">Welcome to our blog!
+Risha is a dedicated team of 3 that is looking to bring you food content from around the globe.
+According to us, although food varies in flavours and textures, it brings people together.
+This is our vision for Risha's Food Blog!
+We aim to bring food-lovers worldwide together to share the most incredible recipes and in the process, learn about 
+each other.
+Get in touch with us to know more!</p>
+</pre>
+            	</div>
+            	<div class="footer-bottom" style="font-weight: bold;">
+            		<p style="text-align: center;">Contact us: <a href="https://www.gmail.com" style="color: black;text-decoration: underline;"><b>team_risha@gmail.com</b></a></p>
+            	</p>
+            	</div>
+            </footer> 
+            </div> 
+            
+                <!-- JS --> 
+            <script src="js/vendors/trianglify.min.js"></script>  
+            <script src="js/vendors/TweenMax.min.js"></script> 
+            <script src="js/vendors/ScrollToPlugin.min.js"></script> 
+            <script src="js/vendors/cash.min.js"></script> 
+            <script src="js/card-modern-blog.js"></script> 
+            <script src="js/modern-blog.js"></script> 
+        </body> 
+    </html>
